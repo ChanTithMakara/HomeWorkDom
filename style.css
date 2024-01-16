@@ -1,0 +1,43 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('img/quantam-computing.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+label{
+    color: rgb(209, 168, 20);
+    font-weight: bold;
+}
+tbody{
+    border: 3px solid black;
+}
+
+tbody tr{
+    border: 2px solid  rgb(81, 48, 4);
+}
+tbody tr td{
+    color: rgb(15, 75, 55);
+    font-size: 14px;
+    font-weight: bold;
+}
+table thead{
+    border: 3px solid rgb(0, 0, 0);
+}
+input{
+    border: 1px solid red;
+    text-align: center;
+    background-color: pink;
+    color: rgb(103, 103, 72);
+}
+.container{
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+}

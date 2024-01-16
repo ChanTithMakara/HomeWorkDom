@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container my-5 ">
+        <h1 class="py-3">Add Tbody</h1>
+        <div class="my-3">
+            <label>
+                ID : <input type="text" id="ID">
+            </label>
+            <label>
+                Name : <input type="text" id="Name">
+            </label>
+            <label>
+                Gender : <input type="text" id="Gender">
+            </label>
+        </div>
+
+        <div>
+            <button onclick="Add()" type="button" class="btn btn-warning">Add</button>
+        </div>
+        <div>
+            <table class="table table-bordered my-3">
+                <thead>
+                    <tr>
+                        <th class="bg-primary">ID</th>
+                        <th class="bg-success">Name</th>
+                        <th class="bg-secondary">Gender</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function Add() {
+            let ID = document.querySelector('#ID').value;
+            let Name = document.querySelector('#Name').value;
+            let Gender = document.querySelector('#Gender').value;
+            let tbody = document.querySelector('#tbody');
+            let tr = tbody.insertRow(0);
+            let td0 = tr.insertCell(0);
+            let td1 = tr.insertCell(1);
+            let td2 = tr.insertCell(2);
+            td0.innerHTML = ID;
+            td1.innerHTML = Name;
+            td2.innerHTML = Gender;
+        }
+
+    </script>
+</body>
+
+</html>
